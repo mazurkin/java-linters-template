@@ -1,0 +1,19 @@
+<FindBugsFilter>
+
+    <!-- WARNING: please abstain from adding new exceptions here -->
+
+    <Match>
+        <Package name="com.pulsepoint.ssus.proto" />
+    </Match>
+
+    <!-- Let's disable now but SpotBugs is right -->
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP"/>
+    </Match>
+
+    <!-- Let's disable now but SpotBugs is right -->
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP2"/>
+    </Match>
+
+</FindBugsFilter>
