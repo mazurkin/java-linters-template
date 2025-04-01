@@ -125,7 +125,7 @@ JAVA_OPTIONS_COMMON+=("-Dcom.sun.management.jmxremote.ssl=false")
 JAVA_OPTIONS_COMMON+=("-Dcom.sun.management.jmxremote.local.only=false")
 
 # Logging
-JAVA_OPTIONS_COMMON+=("-Dlog4j.configurationFile=${DIR_APP_CONF}/log4j2.xml")
+JAVA_OPTIONS_COMMON+=("-Dlog4j2.configurationFile=${DIR_APP_CONF}/log4j2.xml")
 JAVA_OPTIONS_COMMON+=("-Dlog4j2.formatMsgNoLookups=true")
 
 # JVM paths

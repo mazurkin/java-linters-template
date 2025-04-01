@@ -502,9 +502,9 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <fork>true</fork>
                             <effort>Max</effort>
                             <failOnError>true</failOnError>
-                            <fork>true</fork>
                         </configuration>
                     </execution>
                 </executions>
@@ -592,8 +592,11 @@
                     <plugin>
                         <groupId>org.owasp</groupId>
                         <artifactId>dependency-check-maven</artifactId>
-                        <version>12.0.2</version>
+                        <version>12.1.0</version>
                         <configuration>
+                            <!--get the NIST access key and put it into ${NVD_API_KEY} environment variable -->
+                            <!--suppress UnresolvedMavenProperty -->
+                            <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
                             <autoUpdate>true</autoUpdate>
                             <failOnError>true</failOnError>
                             <skipProvidedScope>true</skipProvidedScope>
