@@ -39,8 +39,8 @@ release:
 shellcheck:
 	@mvn --batch-mode exec:exec -N -P shellcheck
 
-.PHONY: dependencies
-dependencies:
+.PHONY: owasp-dependency
+owasp-dependency:
 	@mvn --batch-mode dependency-check:aggregate -P owasp-dependency
 
 # -----------------------------------------------------------------------------

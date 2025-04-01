@@ -18,5 +18,5 @@ VOLUME ["/var/lib/linters"]
 
 VOLUME ["/tmp"]
 
-ENTRYPOINT ["/opt/linters/run.sh"]
+ENTRYPOINT ["/opt/linters/bin/run.sh"]
 CMD []
